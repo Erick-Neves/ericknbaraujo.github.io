@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,40 @@
 </head>
 <body>
     <header class="header">
+        <nav class="header_nav">
+            <ul class="menu menu_principal">
+                <li class="menu_item">
+                    <a class="menu_link active" href="#home">
+                        <span class="menu_text">Home</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="#projetos">
+                        <span class="menu_text">Projetos</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="#sobre">
+                        <span class="menu_text">Sobre</span>
+                    </a>
+                </li>
+                <li class="menu_item">
+                    <a class="menu_link" href="#contatos">
+                        <span class="menu_text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <div class="header_brand">
-            <img class="brand_logo" src="assets/images/logo.png" alt="Logo Erick Neves Batista de Araujo">
+            <a href="">
+                <img class="brand_logo" src="assets/images/logo.png" alt="Logo Erick Neves Batista de Araujo">
+            </a>
         </div>
-        <i id="toggleTheme" class="bi bi-brightness-high"></i>
+        <div class="header_toggle">
+            <i id="toggleTheme" class="bi bi-brightness-high"></i>
+        </div>
     </header>
-    <nav>
+    <nav class="nav_mobile">
         <ul class="menu menu_mobile">
             <li class="menu_item">
                 <a class="menu_link active" href="#home">
@@ -45,7 +73,71 @@
             </li>
         </ul>
     </nav>
-    <h1>Erick Neves Batista de Araujo</h1>
+    <main>
+        <div class="main_content1">
+            <h1><b>Soluções criativas &</b> Desenvolvimentos Diversos</h1>
+            <p>Erick Neves Batista de Araujo, São Paulo-SP, Desenvolvedor Fullstack, Criador de Jogos Digitais e Automatizador de Testes.</p>
+            <ul class="menu menu_social">
+                <li>
+                    <a class="menu_link" href="">
+                        <i class="menu_icon bi-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu_link" href="">
+                        <i class="menu_icon bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu_link" href="">
+                        <i class="menu_icon bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <button class="btn btn_primary">
+                <span>Ver projetos</span>
+                <i class="bi bi-arrow-down-right"></i>
+            </button>
+        </div>
+        <div class="main_content2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Zi2PHsU36Yo?si=2a2KxkNdEenB2SYu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+    <section class="skills">
+        <h2>Conhecimento nas principais tecnologias do mercado</h2>
+        <ul class="skill_list">
+            <li class="skill_item">
+                <img class="skill_logo filter-dark" src="assets/images/angular.svg" alt="Logo do Angular">
+            </li>
+            <li class="skill_item">
+                <img class="skill_logo filter-dark" src="assets/images/cypress.svg" alt="Logo do Cypress">
+            </li>
+            <li class="skill_item">
+                <img class="skill_logo filter-dark" src="assets/images/java.svg" alt="Logo do Java">
+            </li>
+            <li class="skill_item">
+                <img class="skill_logo filter-dark" src="assets/images/jenkins.svg" alt="Logo do Jenkins">
+            </li>
+            <li class="skill_item">
+                <img class="skill_logo filter-dark" src="assets/images/python.svg" alt="Logo do Python">
+            </li>
+            <li class="skill_item">
+                <img class="skill_logo filter-dark" src="assets/images/selenium.svg" alt="Logo do Selenium">
+            </li>
+            <li class="skill_item">
+                <img class="skill_logo filter-dark" src="assets/images/spring-boot.svg" alt="Logo do Spring-boot">
+            </li>
+            <li class="skill_item">
+                <img class="skill_logo filter-dark" src="assets/images/typescript.svg" alt="Logo do Typescript">
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <p>
+            © 2024. Todos os Direitos Reservados. Erick Neves Batista de Araujo. Desenvolvido por <a href="https://github.com/Erick-Neves">Erick Neves</a>
+        </p>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
